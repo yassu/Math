@@ -11,9 +11,7 @@ TO_PDF   = dvipdfmx
 VIEW_PDF = evince
 
 all: $(FILE)
-	$(TEX) $^
-	$(VIEW_DVI) $(basename $^).dvi
+	$(TEX) $^ && $(VIEW_DVI) $(basename $^).dvi
 
 pdf: $(basename $(FILE)).dvi
-	$(TO_PDF) $(basename $^).dvi
-	$(VIEW_PDF) $(basename $^).pdf
+	$(TO_PDF) $(basename $^).dvi && $(VIEW_PDF) $(basename $^).pdf
