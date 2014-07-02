@@ -4,9 +4,15 @@
 \usepackage{amsmath, amssymb}
 \usepackage{amsthm}
 \usepackage{enumerate}
+\usepackage{ascmac}
 
 % useful commands
 \newcommand{\defarrow}{\stackrel{\mathrm{def}}{\Longleftrightarrow}}
+
+% envorionment
+\newenvironment{teacher_talk}[1][] 
+    {\begin{itembox}[l]{Talk with Teacher}}
+    {\end{itembox}}
 
 % simple omissions
 \newcommand{\then}{\Longrightarrow}
@@ -36,6 +42,7 @@
 \newtheorem{Cor}{Colorally}
 \newtheorem{Lem}{Lemma}
 \newtheorem{Def}{Deffinition}
+\newtheorem{conj}{Conjecture}
 \newtheorem{Fact}{Fact}
 
 %% to my pretty format
